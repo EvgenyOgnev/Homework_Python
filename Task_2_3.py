@@ -4,6 +4,7 @@
 
 n = int(input('Введите число: '))
 sum = 0
-for i in range (1, n + 1):
+
+for i in range(1, n + 1):
     sum = sum + ((1+(1/i))**i)
 print(f'Для n = {n}: Сумма = {round(sum, 2)}')
