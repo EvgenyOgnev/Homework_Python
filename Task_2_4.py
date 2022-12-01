@@ -8,22 +8,15 @@
 
 n = int(input('Введите число: '))
 i_n = input(f'Введите индексы, через пробел: ')
-# print(n, '->', end=' ')
-# for i in range(-n, n + 1):
-#     print(f'{i},', end=' ')
-# print(n)
 
 b = []
-for k in range(-n, n + 1):                        # int(input('Введите число: '))
+for k in range(-n, n + 1):
     b.append(k)
 print(b)
 
 i_n = i_n.split()
 val = 1
-# print(i_n)
 for i in range(len(i_n)):
     q = int(i_n[i])
     val = val*b[q]
-print(f'произведение элементов на указанных индексах:{val}')
-
-
+print(f'произведение элементов на указанных индексах = {val}')
