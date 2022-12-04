@@ -4,30 +4,33 @@
 # - 3 -> 11
 # - 2 -> 10
 
+a_a = int(input('Enter a number: '))  # V_1 математический
+a = a_a
+b = 0
+num = 0
+c = 1/10
+count = 0
 
-# double b = 0;
-# double num = 0;
-# double c = 1;
-# for (int i = 0; a > 0; i++)
-# {
-#     b = a % 2;
-#     a = a / 2;
-#     c = c * 10;
-#     num = num + b * c;
-# }
-# Console.WriteLine($"число: {num / 10}");
+while a > 0:
+    b = a % 2
+    a = a // 2
+    c = c * 10
+    num = num + b * c
+    count += 1
+print(f'V_1: {a_a} --> {round(num)}')
 
-# int [] result = new int [(int)(Math.Log(num, 2) + 1)];
-# int count = 0
 
-# while(num > 0)
-# {
-#     result[result.Length-1-count] = num %2;
-#     num=num/2;
-#     count ++;
-# }
-# for(int i = 0; i < result.Length; i++)
-# {
-#     Console.Write($"{result[i]} ");
-# }
+result = []  # V_2 с помощью списка
+i = 0               #len(result)
+a1 = a_a
+while a1 > 0:
+    s = a1 % 2
+    result.append(s)
+    a1 = a1 // 2
+    i += 1
+# print(result)
+
+print('V_2:', a_a, '-->', end=' ')
+for j in range(len(result)):
+    print(result[(-1-j)], end='')
 
