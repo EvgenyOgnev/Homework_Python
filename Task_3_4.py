@@ -21,7 +21,7 @@ print(f'V_1: {a_a} --> {round(num)}')
 
 
 result = []  # V_2 с помощью списка
-i = 0               #len(result)
+i = 0
 a1 = a_a
 while a1 > 0:
     s = a1 % 2
