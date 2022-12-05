@@ -23,8 +23,3 @@ for j in range(1, len(list_a)):
         min_j = list_a[j]
 
 print(f' =>> max(дробной части) - min(дробной части) = {max_j - min_j}')
-
-
-
-
-
